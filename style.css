@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 172, 151);
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed';
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+}
+.t-container{
+    min-width: fit-content;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-auto-columns: 250px;
+    grid-template-areas: 'kira jonathan daniel daniel '
+                       'kira jeanette patrick patrick';
+    grid-gap: 20px;
+    
+}
+.card{
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    align-content: center;
+    box-shadow: 10px 10px 19px 0px rgba(173, 173, 173, 0.46);
+}
+.card-quote{
+    margin: 20px 0;
+    line-height: 1.2em;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.t-statement{
+    font-size: 13px;
+    opacity: 70%;
+    font-weight: 500;
+    line-height: 1.3em;
+    
+}
+.heading{
+   display: flex;
+}
+.heading div{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.photo-card{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+.card-name{
+    font-size: 13px;
+}
+ .verified{
+    opacity: 50%;
+    font-size: 11px;
+    font-weight: 500;
+ }
+ img[name="patrick"]{
+    border: 2px solid hsl(263%, 55%, 52%);
+ }
+ .daniel-card{
+    grid-area: daniel;
+    background-color: rgb(218, 51, 218);
+    color: #fff;
+    background-image: url(https://toppng.com/uploads/preview/quotation-marks-blue-quotation-marks-11562960630ff9mefqyoq.png);
+    background-repeat: no-repeat;
+    background-position: top right 70px;
+    background-size: 100px;
+    left: 100px;
+    background-blend-mode: lighten;
+    
+    
+ }
+ .jonathan-card{
+    grid-area: jonathan;
+    background-color: rgb(29, 26, 26);
+    color: #fff;
+ }
+ .kira-card{
+    grid-area: kira;
+    background-color: #fff;
+    color: hsl(219%, 29%, 14%);
+ }
+ .jeanette-card{
+    grid-area: jeanette;
+    background-color: #fff;
+    color: hsl(219%, 29%, 14%);
+ }
+ .patrick-card{
+    grid-area: patrick;
+    background-color: rgb(41, 38, 38);
+    color: #fff;
+ }
+ @media screen and(max-width: 512px){      
+    body{
+        padding: 50px 0px;
+    }
+    .t-container{
+        display: grid;
+        height: fit-content;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
+        grid-template-areas: 'daniel' 'jonathan' 'jeanette' 'patrick' 'kira';
+        margin: auto;
+        padding: 3px 20px;
+    }
+    .daniel-card{
+        grid-area: daniel;
+    }
+    .jonathan-card{
+        grid-area: jonathan;
+    }
+    .jeanette-card{
+        grid-area: jeanette;
+    }
+    .patrick-card{
+        grid-area: patrick;
+    }
+    .kira-card{
+        grid-area: kira;
+    }
+}
+ 
+
+
